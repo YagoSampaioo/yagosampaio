@@ -8,6 +8,13 @@
     width: 100%;
 }
 
+@media (min-width: 576px) {
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
 .portfolio .portfolio-item {
     margin-bottom: 10px;
 }
@@ -107,6 +114,9 @@
     bottom: 0;
 }
 
+#sobre {
+    line-height: 3.0;
+}
 /*--------------------------------------------------------------
   # Portfolio Details
   --------------------------------------------------------------*/
