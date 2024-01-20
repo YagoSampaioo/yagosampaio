@@ -393,6 +393,8 @@ section {
 
 .section-title {
   padding-bottom: 30px;
+  text-align: left;
+
 }
 
 .section-title h2 {
@@ -512,14 +514,46 @@ section {
 # Skills
 --------------------------------------------------------------*/
 .skills {
-  height: auto;
+  display: flex;
+  flex-direction: column; /* Empilhar itens verticalmente */
+  align-items: center; /* Centralizar os itens horizontalmente */
+  text-align: center; /* Centralizar o texto */
 }
 
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.margemh {
+  margin-right: auto;
+}
+
+.progress .skill{
+  margin-top: 30px;;
+}
+
+
+.progress {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  background:#02163287;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1.0); /* Adiciona uma sombra */
+  border-radius: 20;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+  text-align: center;
+  font-size: 14px;
+}
+
+.progress:hover {
+  background-color: #ffffff; /* Muda a cor para branco quando o mouse está sobre a .progress */
+  color: #040b14;
+  box-shadow: 0 0 10px rgb(255, 255, 255); /* Adiciona uma sombra */
+}
+
+.skills .progress img{
+  width: 130px;
+  margin-bottom: 5px;
+  border-radius: 25px;
 }
 
 .skills .progress .skill {
