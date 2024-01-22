@@ -530,6 +530,7 @@ section {
 
 
 .progress {
+  padding: 5px;
   margin-top: 20px;
   margin-right: 10px;
   margin-left: 10px;
